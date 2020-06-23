@@ -1,0 +1,229 @@
+<div data-purpose="safely-set-inner-html:rich-text-viewer:html" class="article-asset--content--1dAQ9"><p>In the last lecture, we saw that you can react to the onClick event - but to which other events can you listen? You can find a list of supported events here:&nbsp;<a rel="nofollow" href="https://reactjs.org/docs/events.html#supported-events">https://reactjs.org/docs/events.html#supported-events</a></p><h4>Clipboard Events</h4>
+
+<p>Event names:</p>
+
+<div class="ud-component--base-components--code-block" ng-non-bindable=""><div><pre class="prettyprint linenums prettyprinted" role="presentation" style=""><ol class="linenums"><li class="L0"><span class="pln">onCopy onCut onPaste</span></li></ol></pre></div></div>
+
+
+
+<p>Properties:</p>
+
+<div class="ud-component--base-components--code-block" ng-non-bindable=""><div><pre class="prettyprint linenums prettyprinted" role="presentation" style=""><ol class="linenums"><li class="L0"><span class="typ">DOMDataTransfer</span><span class="pln"> clipboardData</span></li></ol></pre></div></div>
+
+
+
+
+
+<h4><a rel="nofollow" href="https://reactjs.org/docs/events.html#composition-events"></a><p><a rel="nofollow" href="https://reactjs.org/docs/events.html#composition-events"></a>Composition Events</p></h4>
+
+<p>Event names:</p>
+
+<div class="ud-component--base-components--code-block" ng-non-bindable=""><div><pre class="prettyprint linenums prettyprinted" role="presentation" style=""><ol class="linenums"><li class="L0"><span class="pln">onCompositionEnd onCompositionStart onCompositionUpdate</span></li></ol></pre></div></div>
+
+
+
+
+
+<p>Properties:</p>
+
+<div class="ud-component--base-components--code-block" ng-non-bindable=""><div><pre class="prettyprint linenums prettyprinted" role="presentation" style=""><ol class="linenums"><li class="L0"><span class="kwd">string</span><span class="pln"> data</span></li></ol></pre></div></div>
+
+
+
+
+
+<h4><a rel="nofollow" href="https://reactjs.org/docs/events.html#keyboard-events"></a><p><a rel="nofollow" href="https://reactjs.org/docs/events.html#keyboard-events"></a>Keyboard Events</p></h4>
+
+<p>Event names:</p>
+
+<div class="ud-component--base-components--code-block" ng-non-bindable=""><div><pre class="prettyprint linenums prettyprinted" role="presentation" style=""><ol class="linenums"><li class="L0"><span class="pln">onKeyDown onKeyPress onKeyUp</span></li></ol></pre></div></div>
+
+
+
+
+
+<p>Properties:</p>
+
+<div class="ud-component--base-components--code-block" ng-non-bindable=""><div><pre class="prettyprint linenums prettyprinted" role="presentation" style=""><ol class="linenums"><li class="L0"><span class="kwd">boolean</span><span class="pln"> altKey</span></li><li class="L1"><span class="pln">number charCode</span></li><li class="L2"><span class="kwd">boolean</span><span class="pln"> ctrlKey</span></li><li class="L3"><span class="kwd">boolean</span><span class="pln"> getModifierState</span><span class="pun">(</span><span class="pln">key</span><span class="pun">)</span></li><li class="L4"><span class="kwd">string</span><span class="pln"> key</span></li><li class="L5"><span class="pln">number keyCode</span></li><li class="L6"><span class="kwd">string</span><span class="pln"> locale</span></li><li class="L7"><span class="pln">number location</span></li><li class="L8"><span class="kwd">boolean</span><span class="pln"> metaKey</span></li><li class="L9"><span class="kwd">boolean</span><span class="pln"> repeat</span></li><li class="L0"><span class="kwd">boolean</span><span class="pln"> shiftKey</span></li><li class="L1"><span class="pln">number which</span></li></ol></pre></div></div>
+
+
+
+
+
+<h4><a rel="nofollow" href="https://reactjs.org/docs/events.html#focus-events"></a><p><a rel="nofollow" href="https://reactjs.org/docs/events.html#focus-events"></a>Focus Events</p></h4>
+
+<p>Event names:</p>
+
+<div class="ud-component--base-components--code-block" ng-non-bindable=""><div><pre class="prettyprint linenums prettyprinted" role="presentation" style=""><ol class="linenums"><li class="L0"><span class="pln">onFocus onBlur</span></li></ol></pre></div></div>
+
+
+
+
+
+<p>These focus events work on all elements in the React DOM, not just form elements.</p>
+
+<p>Properties:</p>
+
+<div class="ud-component--base-components--code-block" ng-non-bindable=""><div><pre class="prettyprint linenums prettyprinted" role="presentation" style=""><ol class="linenums"><li class="L0"><span class="typ">DOMEventTarget</span><span class="pln"> relatedTarget</span></li></ol></pre></div></div>
+
+
+
+
+
+<h4><a rel="nofollow" href="https://reactjs.org/docs/events.html#form-events"></a><p><a rel="nofollow" href="https://reactjs.org/docs/events.html#form-events"></a>Form Events</p></h4>
+
+<p>Event names:</p>
+
+<div class="ud-component--base-components--code-block" ng-non-bindable=""><div><pre class="prettyprint linenums prettyprinted" role="presentation" style=""><ol class="linenums"><li class="L0"><span class="pln">onChange onInput onInvalid onSubmit</span></li></ol></pre></div></div>
+
+
+
+
+
+<p>For more information about the onChange event, see&nbsp;<a rel="nofollow" href="https://reactjs.org/docs/forms.html">Forms</a>.</p>
+
+<h4><a rel="nofollow" href="https://reactjs.org/docs/events.html#mouse-events"></a><p><a rel="nofollow" href="https://reactjs.org/docs/events.html#mouse-events"></a>Mouse Events</p></h4>
+
+<p>Event names:</p>
+
+<div class="ud-component--base-components--code-block" ng-non-bindable=""><div><pre class="prettyprint linenums prettyprinted" role="presentation" style=""><ol class="linenums"><li class="L0"><span class="pln">onClick onContextMenu onDoubleClick onDrag onDragEnd onDragEnter onDragExit</span></li><li class="L1"><span class="pln">onDragLeave onDragOver onDragStart onDrop onMouseDown onMouseEnter onMouseLeave</span></li><li class="L2"><span class="pln">onMouseMove onMouseOut onMouseOver onMouseUp</span></li></ol></pre></div></div>
+
+
+
+
+
+<p>The&nbsp;<code>onMouseEnter</code>&nbsp;and&nbsp;<code>onMouseLeave</code>&nbsp;events propagate from the element being left to the one being entered instead of ordinary bubbling and do not have a capture phase.</p>
+
+<p>Properties:</p>
+
+<div class="ud-component--base-components--code-block" ng-non-bindable=""><div><pre class="prettyprint linenums prettyprinted" role="presentation" style=""><ol class="linenums"><li class="L0"><span class="kwd">boolean</span><span class="pln"> altKey</span></li><li class="L1"><span class="pln">number button</span></li><li class="L2"><span class="pln">number buttons</span></li><li class="L3"><span class="pln">number clientX</span></li><li class="L4"><span class="pln">number clientY</span></li><li class="L5"><span class="kwd">boolean</span><span class="pln"> ctrlKey</span></li><li class="L6"><span class="kwd">boolean</span><span class="pln"> getModifierState</span><span class="pun">(</span><span class="pln">key</span><span class="pun">)</span></li><li class="L7"><span class="kwd">boolean</span><span class="pln"> metaKey</span></li><li class="L8"><span class="pln">number pageX</span></li><li class="L9"><span class="pln">number pageY</span></li><li class="L0"><span class="typ">DOMEventTarget</span><span class="pln"> relatedTarget</span></li><li class="L1"><span class="pln">number screenX</span></li><li class="L2"><span class="pln">number screenY</span></li><li class="L3"><span class="kwd">boolean</span><span class="pln"> shiftKey</span></li></ol></pre></div></div>
+
+
+
+
+
+<h4><a rel="nofollow" href="https://reactjs.org/docs/events.html#selection-events"></a><p><a rel="nofollow" href="https://reactjs.org/docs/events.html#selection-events"></a>Selection Events</p></h4>
+
+<p>Event names:</p>
+
+<div class="ud-component--base-components--code-block" ng-non-bindable=""><div><pre class="prettyprint linenums prettyprinted" role="presentation" style=""><ol class="linenums"><li class="L0"><span class="pln">onSelect</span></li></ol></pre></div></div>
+
+
+
+
+
+<h4><a rel="nofollow" href="https://reactjs.org/docs/events.html#touch-events"></a><p><a rel="nofollow" href="https://reactjs.org/docs/events.html#touch-events"></a>Touch Events</p></h4>
+
+<p>Event names:</p>
+
+<div class="ud-component--base-components--code-block" ng-non-bindable=""><div><pre class="prettyprint linenums prettyprinted" role="presentation" style=""><ol class="linenums"><li class="L0"><span class="pln">onTouchCancel onTouchEnd onTouchMove onTouchStart</span></li></ol></pre></div></div>
+
+
+
+
+
+<p>Properties:</p>
+
+<div class="ud-component--base-components--code-block" ng-non-bindable=""><div><pre class="prettyprint linenums prettyprinted" role="presentation" style=""><ol class="linenums"><li class="L0"><span class="kwd">boolean</span><span class="pln"> altKey</span></li><li class="L1"><span class="typ">DOMTouchList</span><span class="pln"> changedTouches</span></li><li class="L2"><span class="kwd">boolean</span><span class="pln"> ctrlKey</span></li><li class="L3"><span class="kwd">boolean</span><span class="pln"> getModifierState</span><span class="pun">(</span><span class="pln">key</span><span class="pun">)</span></li><li class="L4"><span class="kwd">boolean</span><span class="pln"> metaKey</span></li><li class="L5"><span class="kwd">boolean</span><span class="pln"> shiftKey</span></li><li class="L6"><span class="typ">DOMTouchList</span><span class="pln"> targetTouches</span></li><li class="L7"><span class="typ">DOMTouchList</span><span class="pln"> touches</span></li></ol></pre></div></div>
+
+
+
+
+
+<h4><a rel="nofollow" href="https://reactjs.org/docs/events.html#ui-events"></a><p><a rel="nofollow" href="https://reactjs.org/docs/events.html#ui-events"></a>UI Events</p></h4>
+
+<p>Event names:</p>
+
+<div class="ud-component--base-components--code-block" ng-non-bindable=""><div><pre class="prettyprint linenums prettyprinted" role="presentation" style=""><ol class="linenums"><li class="L0"><span class="pln">onScroll</span></li></ol></pre></div></div>
+
+
+
+
+
+<p>Properties:</p>
+
+<div class="ud-component--base-components--code-block" ng-non-bindable=""><div><pre class="prettyprint linenums prettyprinted" role="presentation" style=""><ol class="linenums"><li class="L0"><span class="pln">number detail</span></li><li class="L1"><span class="typ">DOMAbstractView</span><span class="pln"> view</span></li></ol></pre></div></div>
+
+
+
+
+
+<h4><a rel="nofollow" href="https://reactjs.org/docs/events.html#wheel-events"></a><p><a rel="nofollow" href="https://reactjs.org/docs/events.html#wheel-events"></a>Wheel Events</p></h4>
+
+<p>Event names:</p>
+
+<div class="ud-component--base-components--code-block" ng-non-bindable=""><div><pre class="prettyprint linenums prettyprinted" role="presentation" style=""><ol class="linenums"><li class="L0"><span class="pln">onWheel</span></li></ol></pre></div></div>
+
+
+
+
+
+<p>Properties:</p>
+
+<div class="ud-component--base-components--code-block" ng-non-bindable=""><div><pre class="prettyprint linenums prettyprinted" role="presentation" style=""><ol class="linenums"><li class="L0"><span class="pln">number deltaMode</span></li><li class="L1"><span class="pln">number deltaX</span></li><li class="L2"><span class="pln">number deltaY</span></li><li class="L3"><span class="pln">number deltaZ</span></li></ol></pre></div></div>
+
+
+
+
+
+<h4><a rel="nofollow" href="https://reactjs.org/docs/events.html#media-events"></a><p><a rel="nofollow" href="https://reactjs.org/docs/events.html#media-events"></a>Media Events</p></h4>
+
+<p>Event names:</p>
+
+<div class="ud-component--base-components--code-block" ng-non-bindable=""><div><pre class="prettyprint linenums prettyprinted" role="presentation" style=""><ol class="linenums"><li class="L0"><span class="pln">onAbort onCanPlay onCanPlayThrough onDurationChange onEmptied onEncrypted</span></li><li class="L1"><span class="pln">onEnded onError onLoadedData onLoadedMetadata onLoadStart onPause onPlay</span></li><li class="L2"><span class="pln">onPlaying onProgress onRateChange onSeeked onSeeking onStalled onSuspend</span></li><li class="L3"><span class="pln">onTimeUpdate onVolumeChange onWaiting</span></li></ol></pre></div></div>
+
+
+
+
+
+<h4><a rel="nofollow" href="https://reactjs.org/docs/events.html#image-events"></a><p><a rel="nofollow" href="https://reactjs.org/docs/events.html#image-events"></a>Image Events</p></h4>
+
+<p>Event names:</p>
+
+<div class="ud-component--base-components--code-block" ng-non-bindable=""><div><pre class="prettyprint linenums prettyprinted" role="presentation" style=""><ol class="linenums"><li class="L0"><span class="pln">onLoad onError</span></li></ol></pre></div></div>
+
+
+
+
+
+<h4><a rel="nofollow" href="https://reactjs.org/docs/events.html#animation-events"></a><p><a rel="nofollow" href="https://reactjs.org/docs/events.html#animation-events"></a>Animation Events</p></h4>
+
+<p>Event names:</p>
+
+<div class="ud-component--base-components--code-block" ng-non-bindable=""><div><pre class="prettyprint linenums prettyprinted" role="presentation" style=""><ol class="linenums"><li class="L0"><span class="pln">onAnimationStart onAnimationEnd onAnimationIteration</span></li></ol></pre></div></div>
+
+
+
+
+
+<p>Properties:</p>
+
+<div class="ud-component--base-components--code-block" ng-non-bindable=""><div><pre class="prettyprint linenums prettyprinted" role="presentation" style=""><ol class="linenums"><li class="L0"><span class="kwd">string</span><span class="pln"> animationName</span></li><li class="L1"><span class="kwd">string</span><span class="pln"> pseudoElement</span></li><li class="L2"><span class="kwd">float</span><span class="pln"> elapsedTime</span></li></ol></pre></div></div>
+
+
+
+
+
+<h4><a rel="nofollow" href="https://reactjs.org/docs/events.html#transition-events"></a><p><a rel="nofollow" href="https://reactjs.org/docs/events.html#transition-events"></a>Transition Events</p></h4>
+
+<p>Event names:</p>
+
+<div class="ud-component--base-components--code-block" ng-non-bindable=""><div><pre class="prettyprint linenums prettyprinted" role="presentation" style=""><ol class="linenums"><li class="L0"><span class="pln">onTransitionEnd</span></li></ol></pre></div></div>
+
+
+
+
+
+<p>Properties:</p>
+
+<div class="ud-component--base-components--code-block" ng-non-bindable=""><div><pre class="prettyprint linenums prettyprinted" role="presentation" style=""><ol class="linenums"><li class="L0"><span class="kwd">string</span><span class="pln"> propertyName</span></li><li class="L1"><span class="kwd">string</span><span class="pln"> pseudoElement</span></li><li class="L2"><span class="kwd">float</span><span class="pln"> elapsedTime</span></li></ol></pre></div></div>
+
+
+
+
+
+<h4><a rel="nofollow" href="https://reactjs.org/docs/events.html#other-events"></a><p><a rel="nofollow" href="https://reactjs.org/docs/events.html#other-events"></a>Other Events</p></h4>
+
+<p>Event names:</p>
+
+<div class="ud-component--base-components--code-block" ng-non-bindable=""><div><pre class="prettyprint linenums prettyprinted" role="presentation" style=""><ol class="linenums"><li class="L0"><span class="pln">onToggle</span></li></ol></pre></div></div><p><br></p></div>
